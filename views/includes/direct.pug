@@ -1,0 +1,33 @@
+.grid-33
+  .app--section
+    ul.app--message--list
+      li
+        h3
+          | Last messages sent
+          a
+        ul.app--message--conversation
+          li.app--message--me
+            .app--avatar(style=`background-image: url(${mydata.profileImage})`)
+              img(src='images/f-spore.png')
+            p.app--message--text #{mydata.messages[4].body}
+            p.app--message--timestamp #{mydata.messages[4].date}
+          li.app--message--me
+            .app--avatar(style=`background-image: url(${mydata.profileImage})`)
+              img(src='images/m-spore.png')
+            p.app--message--text #{mydata.messages[3].body}
+            p.app--message--timestamp #{mydata.messages[3].date}
+          li.app--message--me
+            .app--avatar(style=`background-image: url(${mydata.profileImage})`)
+              img(src='images/f-spore.png')
+            p.app--message--text #{mydata.messages[2].body}
+            p.app--message--timestamp #{mydata.messages[2].date}
+          li.app--message--me
+            .app--avatar(style=`background-image: url(${mydata.profileImage})`)
+              img(src='images/m-spore.png')
+            p.app--message--text #{mydata.messages[1].body}
+            p.app--message--timestamp #{mydata.messages[1].date}
+          li.app--message--me
+            .app--avatar(style=`background-image: url(${mydata.profileImage})`)
+              img(src='images/f-spore.png')
+            p.app--message--text #{mydata.messages[0].body}
+            p.app--message--timestamp #{mydata.messages[0].date}
