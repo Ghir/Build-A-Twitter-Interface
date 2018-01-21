@@ -1,53 +1,14 @@
 .grid-33
   .app--section
     ul.app--user--list
-      li
-        .circle--fluid
-          .circle--fluid--cell.circle--fluid--primary
-            a.app--tweet--author
-              .app--avatar(style=`background-image: url(${mydata.friends[0].profileImage})`)
-                img(src='images/f-spore.png')
-              h4 #{mydata.friends[0].realName}
-              p @#{mydata.friends[0].screenName}
-          .circle--fluid--cell
-            a.button.button-text Unfollow
-      li
-        .circle--fluid
-          .circle--fluid--cell.circle--fluid--primary
-            a.app--tweet--author
-              .app--avatar(style=`background-image: url(${mydata.friends[1].profileImage})`)
-                img(src='images/f-spore.png')
-              h4 #{mydata.friends[1].realName}
-              p @#{mydata.friends[1].screenName}
-          .circle--fluid--cell
-            a.button.button-text Unfollow
-      li
-        .circle--fluid
-          .circle--fluid--cell.circle--fluid--primary
-            a.app--tweet--author
-              .app--avatar(style=`background-image: url(${mydata.friends[2].profileImage})`)
-                img(src='images/f-spore.png')
-              h4 #{mydata.friends[2].realName}
-              p @#{mydata.friends[2].screenName}
-          .circle--fluid--cell
-            a.button.button-text Unfollow
-      li
-        .circle--fluid
-          .circle--fluid--cell.circle--fluid--primary
-            a.app--tweet--author
-              .app--avatar(style=`background-image: url(${mydata.friends[3].profileImage})`)
-                img(src='images/f-spore.png')
-              h4 #{mydata.friends[3].realName}
-              p @#{mydata.friends[3].screenName}
-          .circle--fluid--cell
-            a.button.button-text Unfollow
-      li
-        .circle--fluid
-          .circle--fluid--cell.circle--fluid--primary
-            a.app--tweet--author
-              .app--avatar(style=`background-image: url(${mydata.friends[4].profileImage})`)
-                img(src='images/f-spore.png')
-              h4 #{mydata.friends[4].realName}
-              p @#{mydata.friends[4].screenName}
-          .circle--fluid--cell
-            a.button.button-text Unfollow
+      each friend in friends
+        li
+          .circle--fluid
+            .circle--fluid--cell.circle--fluid--primary
+              a.app--tweet--author
+                .app--avatar(style=`background-image: url(${friend.profile_image_url})`)
+                  img(src='images/f-spore.png')
+                h4 #{friend.name}
+                p @#{friend.screen_name}
+            .circle--fluid--cell
+              a.button.button-text Unfollow
