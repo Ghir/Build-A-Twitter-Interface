@@ -38,19 +38,16 @@ app.use(
     )}
 )
 
-
 app.get('/', (req, res) => {
   const { account, tweets, friends, messages } = req;
   res.render('index', { account, tweets, friends, messages });
 })
 
-
 app.post('/', (req, res) => {
   T.post('statuses/update', { status: req.body.tweet }, function(err, data, response) {
-    res.redirect('/')
+    res.json(data)
   })
 })
-
 
 app.use((req, res, next) => {
     const err = new Error('The page you are looking for is not available, sorry.');
