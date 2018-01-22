@@ -3,7 +3,7 @@
 TREEHOUSE TECHDEGREE FULL STACK JAVASCRIPT - PROJECT 7 - BUILD A TWITTER INTERFACE
 
 
-#####An Express app that authenticates with Twitter to show recent activity and send tweets.
+##### An Express app that authenticates with Twitter to show recent activity and send tweets.
 
 
 ## Config file
