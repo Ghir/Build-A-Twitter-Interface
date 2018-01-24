@@ -3,5 +3,3 @@ extends layout
 block error
   section.desk
     h1= `${error.message} - Status: ${error.status}`
-    .paper
-      pre.stack-trace= error.stack

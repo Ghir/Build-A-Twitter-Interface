@@ -19,7 +19,7 @@ app.use(
       }
     )},
     (req, res, next) => {
-      T.get('statuses/user_timeline', { screen_name: 'Ghir_Dario', count: 5 }, function(err, data, response) {
+      T.get('statuses/user_timeline', { screen_name: req.account.screen_name, count: 5 }, function(err, data, response) {
         req.tweets = data;
         next();
       }
@@ -31,7 +31,7 @@ app.use(
     }
   )},
     (req, res, next) => {
-      T.get('friends/list', { screen_name: 'Ghir_Dario', count: 5 }, function(err, data, response) {
+      T.get('friends/list', { screen_name: req.account.screen_name, count: 5 }, function(err, data, response) {
         req.friends = data.users;
         next();
     }
