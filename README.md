@@ -3,6 +3,7 @@
 TREEHOUSE TECHDEGREE FULL STACK JAVASCRIPT - PROJECT 7 - BUILD A TWITTER INTERFACE
 
 
+
 ## Config file
 Create a config.js file on the root and add your Twitter App credentials:
 ```
