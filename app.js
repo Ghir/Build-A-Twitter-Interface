@@ -38,6 +38,7 @@ app.use(
     )}
 )
 
+
 app.get('/', (req, res) => {
   const { account, tweets, friends, messages } = req;
   res.render('index', { account, tweets, friends, messages });
