@@ -1,6 +1,6 @@
 # JS-Project-7---Build-A-Twitter-Interface
 
-
+An Express app that authenticates with Twitter to show recent activity and send tweets.
 
 
 ## Config file
