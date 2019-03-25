@@ -1,9 +1,7 @@
-# JS-Project-7---Build-A-Twitter-Interface
-
 An Express app that authenticates with Twitter to show recent activity and send tweets.
 
 
-## Config file
+### Config file
 Create a config.js file on the root and add your Twitter App credentials:
 ```
 module.exports = {
@@ -14,6 +12,6 @@ module.exports = {
 };
 ```
 
-## Running
+### Running
 * `npm install`
 * `npm start`
