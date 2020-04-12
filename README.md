@@ -1,7 +1,11 @@
-Express app that integrates the Twitter API to send tweets and show recent activity.
+### Twitter Interface
+
+Full-Stack app that lets you use your Twitter account to send tweets and see the recent activity.
 
 ### Config file
+
 Create a config.js file on the root and add your Twitter App credentials:
+
 ```
 module.exports = {
   consumer_key: "YOUR-CONSUMER-KEY",
@@ -12,5 +16,11 @@ module.exports = {
 ```
 
 ### Running
-* `npm install`
-* `npm start`
+
+- `npm install`
+- `npm start`
+
+### Technologies
+
+- Node
+- Express
