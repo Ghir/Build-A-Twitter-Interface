@@ -1,4 +1,4 @@
-### Twitter Interface
+## Twitter Interface
 
 Full-Stack app that lets you use your Twitter account to send tweets and see the recent activity.
 
@@ -24,3 +24,6 @@ module.exports = {
 
 - Node
 - Express
+- Pug
+- JQuery
+- Twit
