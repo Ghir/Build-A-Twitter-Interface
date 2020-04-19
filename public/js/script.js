@@ -1,4 +1,3 @@
-
 $('form').submit(function (e) {
   e.preventDefault();
   const tweet = $(this).serialize();
